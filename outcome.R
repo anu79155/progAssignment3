@@ -1,4 +1,4 @@
-#installing the "data.table" package 
+#installing the "data.table" package is used for working with tabular data in R
 
 library("data.table")
 # Reading the Hospital data
@@ -8,6 +8,6 @@ library("data.table")
 head(outcome)
 outcome[, 11] <- as.numeric(outcome[, 11])
 
-## You may get a warning about NAs being introduced; that is okay
+## Ignoring the warning message  about NAs being introduced
 
  hist(outcome[, 11])
